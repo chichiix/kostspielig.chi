@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first website built using HTML.</p>
-    <a href="https://www.example.com">Click here to visit Example</a>
-</body>
+            <head>
+
+                <title>kost-spielig</title>
+                <link href="resources/css/index.css" type="text/css" rel="stylesheet">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+                <script src="script.js" defer></script>
+
+
+            </head>
+
+
+            <body>
+                <header class="header">
+                <div class="flex-container">
+                    
+
+                        <!-- KNOPF FÜR INFO -->  
+                        <button class="containertopsides" id="info-button" data-overlay="info-overlay" type="button">
+                        ?
+                        </button>
+
+                    <button class="containertopcenter"><strong>Kost</strong><span class="weiß"><strong>spielig</strong></span></button>
+
+                        <!-- KNOPF FÜR MODUS -->
+                            <button class="containertopsides" id="mode-button" data-overlay="mode-overlay" type="button">
+                            +
+                            </button>
+                </div>
+                </header>
+            
+
+                  
+
+                <p>Spielen</p>
+                <div id="image-container"></div>
+                <script src="ImageGenerator.js" alt="Hier würde ein Bild stehen" id="fixed-image"></script>
+                <div id="game-stats"> Versuch: 1/5</div>
+                <div id="versuche-container"> </div>
+                    <div id="1" class="versuch-container"></div>
+                    <div id="2" class="versuch-container"></div>
+                    <div id="3" class="versuch-container"></div>
+                    <div id="4" class="versuch-container"></div>
+                    <div id="5" class="versuch-container"></div>
+                    <div id="input-container" class="versuche-container ransparenter-hintergrund"></div>
+                        <div id="text-eingabe-container"></div>
+                        <div id="knopf-container"></div>
+                <div id="info-overlay" class="overlay" style="display: none"></div>
+                <div id="menu-overlay" class="overlay" style="display: none"></div>
+            
+            </body>
+
+    <footer class="referallinks">
+        <p id="referallinkss">meine anderen websites sind hier: <a href="https://www.google.com/" target="_blank">Google</a></p>
+    </footer>
 </html>
