@@ -1,0 +1,164 @@
+* {
+    font-family: RTLUnited;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+  }
+
+  @font-face {
+    font-family: 'RTLUnited';
+    src: url('../RTLUnitedText/RTLUnitedText-v1300/WebFonts/WOFF2/RTLUnitedText-Regular.woff2') format('woff2'),
+         url('../RTLUnitedText/RTLUnitedText-v1300/WebFonts/WOFF/RTLUnitedText-Regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+  }
+
+  html {
+    /*background-image: url('../images/Hintergrund-Gradient-dark.jpg');*/
+    background-color:rgb(182, 182, 182);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: #6a0dad;
+    width: 100%;
+    padding: 0;
+    /* position: fixed; Fixiert den Balken oben auf der Seite */
+    top: 0;
+    left: 0;
+    /*z-index: 1000;  Stellt sicher, dass der Balken über anderen Inhalten liegt */
+}
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .containertopcenter {
+    background-color: #6a0dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    flex-shrink:0;
+    font-size: 48px;
+    
+  }
+
+  .containertopsides {
+    width: 70px;
+    height: 70px;
+    background-color: #6a0dad;
+    color:rgb(0, 0, 0);
+    border-style: hidden;
+    border-color: aqua;
+    border-radius: 3px;
+    font-size: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containertopsides:hover {
+    background-color:rgb(128, 78, 221);
+  }
+
+
+
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+  }
+  
+
+  
+  .weiß {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  p, 
+  li {
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+
+  
+  .header-container {
+      display: flex;
+      align-items: center; /* Vertikale Ausrichtung in der Mitte */
+      justify-content: center; /* Zentriert die Überschriften horizontal */
+      height: 100vh; /* Macht den Container so hoch wie das Viewport */
+  }
+
+
+  .header-container h1:first-of-type {
+  margin-right: 10px; /* Abstand zwischen den beiden h1-Elementen */
+  }
+
+  #image-container {
+    border: 10px solid gray;
+    max-width: 280px;
+    max-height: 350px;  
+    width: 100%;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    left: 600px;
+    top: 120px;
+    bottom: 0;
+}
+
+#fixed-image {
+}
+
+.versuche-container {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background-color: rgb(93, 93, 93);
+  box-shadow: inset 0 0 5px;
+}
+
+
+
+.referallinks {
+  top: 900px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  position: absolute;
+  justify-content: center;
+  
+}
+
+.referallinkss {
+display: flex;
+flex-direction: column;
+align-self: flex-end;
+
+}
